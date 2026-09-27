@@ -4,7 +4,7 @@ DevTools Desktop — Command Palette
 Global command palette (Ctrl+K) for quick tool/action access.
 """
 
-from PySide6.QtCore import Qt, Signal, QTimer
+from PySide6.QtCore import Qt, Signal, QTimer, QEvent
 from PySide6.QtGui import QKeyEvent, QFont
 from PySide6.QtWidgets import (
     QDialog, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit,
@@ -65,10 +65,9 @@ class CommandPalette(QDialog):
         self.setWindowFlags(
             Qt.WindowType.FramelessWindowHint
             | Qt.WindowType.Dialog
-            | Qt.WindowType.Popup
         )
         self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground)
-        self.setModal(True)
+        self.setAttribute(Qt.WidgetAttribute.WA_DeleteOnClose)
         self.setFixedWidth(540)
         self.setMaximumHeight(440)
 
@@ -192,10 +191,16 @@ class CommandPalette(QDialog):
             elif event.key() == Qt.Key.Key_Escape:
                 self.close()
                 return True
+            elif event.modifiers() == Qt.KeyboardModifier.ControlModifier and event.key() == Qt.Key.Key_K:
+                self.close()
+                return True
         return super().eventFilter(obj, event)
 
     def keyPressEvent(self, event: QKeyEvent):
         if event.key() == Qt.Key.Key_Escape:
+            self.close()
+            return
+        if event.modifiers() == Qt.KeyboardModifier.ControlModifier and event.key() == Qt.Key.Key_K:
             self.close()
             return
         if event.key() in (Qt.Key.Key_Return, Qt.Key.Key_Enter):
@@ -209,6 +214,11 @@ class CommandPalette(QDialog):
             self.search_input.setText(self.search_input.text() + event.text())
             return
         super().keyPressEvent(event)
+
+    def event(self, event):
+        if event.type() == QEvent.Type.WindowDeactivate:
+            self.close()
+        return super().event(event)
 
     def showEvent(self, event):
         super().showEvent(event)

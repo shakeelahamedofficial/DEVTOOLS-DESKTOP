@@ -1,48 +1,77 @@
 # DevTools Desktop — Store Listing
 
-**Product Title:**
-DevTools Desktop — The everyday toolkit for developers
+---
 
-**Short Description:**
-A premium, lightweight, offline-first Windows developer utility toolbox combining frequently needed utilities into one fast desktop application.
+## Product Title
 
-**Long Description:**
-Stop relying on ad-filled web tools, random temporary scripts, or bloated Electron apps for your everyday development tasks.
+DevTools Desktop
 
-**DevTools Desktop** is a native, offline-first Windows utility application crafted to provide the core tools you reach for every day, bundled in a premium, ultra-responsive interface. It’s designed to be keyboard-friendly, privacy-respecting, and fast.
+## Short Tagline
 
-**What's Included (10 Professional Utilities):**
-- **JSON Formatter**: Format, minify, and validate with robust error reporting.
-- **JWT Decoder**: Inspect token headers, payloads, and expiration securely without sending tokens online.
-- **Base64 Encoder/Decoder**: Instantly convert text and files.
-- **URL Tool**: Quickly encode and decode query strings and URIs.
-- **UUID Generator**: Generate thousands of v4 UUIDs instantly and export to CSV/TXT.
-- **Hash Generator**: Generate secure cryptographic hashes (SHA-256, SHA-512, etc.) for text and files.
-- **Timestamp Converter**: Switch between Unix epochs and localized datetime strings easily.
-- **Regex Tester**: Write and debug regular expressions with live highlighting and group extraction.
-- **SQL Formatter**: Clean up messy database queries.
-- **HTTP Client**: Send asynchronous API requests directly from your desktop.
+The everyday toolkit for developers.
 
-**Key Features:**
-- ⚡ **Lightning Fast:** Built natively with Qt/PySide6, no heavy webviews.
-- 🔒 **Offline First:** Your data never leaves your machine. Zero telemetry, zero analytics.
-- ⌨️ **Keyboard Driven:** Global command palette (`Ctrl+K`) to jump between tools.
-- 🎨 **Beautiful UI:** Elegant dark and light themes that look great on modern Windows.
-- 🎒 **Portable:** No installation required. Just extract and run.
+## Short Description
 
-**System Requirements:**
+A premium, lightweight, offline-first Windows developer utility application with 10 essential tools in one portable package.
+
+## Full Product Description
+
+Stop relying on ad-filled web tools, scattered browser tabs, or bloated apps for everyday development tasks.
+
+**DevTools Desktop** is a fast, portable Windows desktop application that puts 10 essential developer utilities in one clean interface. Every tool runs locally on your machine with zero telemetry, zero analytics, and zero internet dependency (except the HTTP Client you control).
+
+It's designed for developers who want a reliable, keyboard-friendly utility toolkit that launches instantly, respects their privacy, and stays out of the way.
+
+No installation wizard. No Python required. No accounts. Just extract the ZIP and run `DevTools.exe`.
+
+## Key Features
+
+- **Portable** — No installation required. Extract and run.
+- **Offline First** — All tools except the HTTP Client work without an internet connection.
+- **Fast** — Built natively, launches in seconds, responds instantly.
+- **Private** — Zero telemetry, zero analytics, zero tracking. Your data stays on your machine.
+- **Keyboard Driven** — Global Command Palette (`Ctrl+K`) for instant tool switching.
+- **Dark & Light Themes** — Professional UI that adapts to your preference.
+- **10 Tools in One** — Everything a developer reaches for daily, in a single window.
+
+## 10 Tools Included
+
+| # | Tool | What It Does |
+|---|------|--------------|
+| 1 | **JSON Formatter** | Format, minify, and validate JSON with clear error messages. |
+| 2 | **JWT Decoder** | Decode JWT headers and payloads locally without sending tokens online. |
+| 3 | **Base64 Encoder/Decoder** | Encode and decode text and files to/from Base64. |
+| 4 | **URL Encoder/Decoder** | Encode and decode URLs and query parameters. |
+| 5 | **UUID Generator** | Generate v4 UUIDs in bulk and export to TXT or CSV. |
+| 6 | **Hash Generator** | Generate MD5, SHA-1, SHA-256, SHA-384, SHA-512 hashes for text and files. |
+| 7 | **Timestamp Converter** | Convert between Unix timestamps and human-readable dates. |
+| 8 | **Regex Tester** | Test regex patterns with live match highlighting and group extraction. |
+| 9 | **SQL Formatter** | Format and minify SQL queries. |
+| 10 | **HTTP Client** | Send API requests with custom headers, methods, and bodies. |
+
+## System Requirements
+
 - Windows 10 or Windows 11
 - ~100 MB available disk space
+- No Python installation required
+- No internet connection required (except for the HTTP Client)
 
-**License Summary:**
-Commercial End-User License. You may use this software for both personal and commercial development work. Resale and redistribution are prohibited.
+## What The Customer Receives
 
-**FAQ:**
-*Does this require an internet connection?*
-No! Aside from the HTTP Client tool (which you control), the entire app functions 100% offline.
+- `DevTools.exe` — The portable application executable
+- `_internal/` — Required runtime files
+- `README.md` — Product overview and quick-start guide
+- `USER_GUIDE.md` — Detailed usage guide for all 10 tools
+- `LICENSE.txt` — Commercial End-User License Agreement
+- `PRIVACY.md` — Privacy statement
+- `CHANGELOG.md` — Version history
 
-*Will it work on Mac/Linux?*
-This build is specifically packaged and optimized for Windows.
+**This product includes the compiled Windows application and end-user documentation. Source code is not included with the purchase.**
 
-**Suggested Price:**
-$15.00
+## License
+
+Commercial End-User License. You may use this software for personal and commercial development work. Redistribution and resale are prohibited.
+
+---
+
+Copyright © 2026 shakeelahamedofficial. All rights reserved.
